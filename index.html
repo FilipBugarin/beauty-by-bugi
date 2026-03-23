@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beauty by Bugi | Usluge i Cjenik</title>
+    <meta
+      name="description"
+      content="Beauty by Bugi - radovi, usluge, cjenik i rezervacije preko Instagrama."
+    />
+    <link rel="preconnect" href="https://www.instagram.com" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="background-orb orb-left" aria-hidden="true"></div>
+    <div class="background-orb orb-right" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Beauty by Bugi početna">
+        <span class="brand-mark">BB</span>
+        <span class="brand-copy">
+          <strong>Beauty by Bugi</strong>
+          <span>Radovi, usluge i rezervacije</span>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Glavna navigacija">
+        <a href="#radovi">Radovi</a>
+        <a href="#cjenik">Cjenik</a>
+        <a href="#rezervacije">Rezervacije</a>
+      </nav>
+
+      <a
+        class="button button-small"
+        href="https://www.instagram.com/beauty.by.bugi/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Instagram DM
+      </a>
+    </header>
+
+    <main id="top">
+      <section class="hero section" data-reveal>
+        <div class="hero-copy">
+          <p class="eyebrow">Beauty by Bugi</p>
+          <h1>Nokti, pedikura, depilacije i masaže.</h1>
+          <p class="lead">
+            Na stranici možeš pogledati radove, pregled usluga i cjenik.
+            Za termin se javi direktno preko Instagrama.
+          </p>
+
+          <div class="hero-actions">
+            <a
+              class="button"
+              href="https://www.instagram.com/beauty.by.bugi/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Rezerviraj termin
+            </a>
+            <a class="button button-secondary" href="#cjenik">Pogledaj cjenik</a>
+          </div>
+
+          <ul class="hero-points" aria-label="Izdvojene prednosti">
+            <li>Primjeri radova</li>
+            <li>Cjenik usluga</li>
+            <li>Rezervacije u DM</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="visual-stack">
+            <figure class="visual-card visual-card-main">
+              <img src="assets/gallery/nails-01.jpeg" alt="" />
+            </figure>
+            <figure class="visual-card visual-card-accent">
+              <img src="assets/gallery/nails-06.jpeg" alt="" />
+            </figure>
+            <div class="floating-note">
+              <span>Beauty by Bugi</span>
+              <strong>Javi se za termin</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro-grid" data-reveal>
+        <article class="panel statement">
+          <p class="eyebrow">Na jednom mjestu</p>
+          <h2>Sve osnovne informacije bez previše teksta.</h2>
+          <p>
+            Ovdje se mogu pogledati radovi, cijene i način rezervacije.
+            Ako nekoga zanima više detalja, najlakše je javiti se porukom.
+          </p>
+        </article>
+
+        <div class="panel feature-list">
+          <article>
+            <h3>Radovi</h3>
+            <p>Galerija prikazuje stvarne primjere dosadašnjih radova.</p>
+          </article>
+          <article>
+            <h3>Cjenik</h3>
+            <p>Cijene su složene po kategorijama da se brzo mogu pregledati.</p>
+          </article>
+          <article>
+            <h3>Rezervacije</h3>
+            <p>Za termin se javlja direktno na Instagram profil.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="radovi" class="section" data-reveal>
+        <div class="section-heading">
+          <p class="eyebrow">Radovi</p>
+          <h2>Primjeri dosadašnjih radova.</h2>
+          <p>
+            Klik na sliku otvara veći prikaz.
+          </p>
+        </div>
+
+        <div id="gallery" class="gallery" aria-live="polite"></div>
+      </section>
+
+      <section id="cjenik" class="section price-section" data-reveal>
+        <div class="section-heading">
+          <p class="eyebrow">Cjenik usluga</p>
+          <h2>Pregled usluga i cijena.</h2>
+          <p>
+            Ako nisi sigurna koja usluga ti treba, javi se porukom za dodatne informacije.
+          </p>
+        </div>
+
+        <div class="price-layout">
+          <article class="panel price-copy">
+            <h3>Napomena</h3>
+            <p>
+              Za rezervaciju termina ili dodatna pitanja javi se na Instagram.
+            </p>
+            <ul class="check-list">
+              <li>Pošalji koju uslugu želiš</li>
+              <li>Navedi termin koji ti odgovara</li>
+              <li>Ako imaš inspiraciju, pošalji i sliku</li>
+            </ul>
+            <a
+              class="button"
+              href="https://www.instagram.com/beauty.by.bugi/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Pošalji upit
+            </a>
+          </article>
+
+          <div class="price-cards">
+            <article class="panel price-category">
+              <p class="price-category-label">Masaže</p>
+              <ul class="price-list" aria-label="Cjenik masaža">
+                <li class="price-row price-row-stack">
+                  <div>
+                    <strong>Klasična masaža</strong>
+                    <span>15 min</span>
+                  </div>
+                  <strong>10 EUR</strong>
+                </li>
+                <li class="price-row">
+                  <span>30 min</span>
+                  <strong>13 EUR</strong>
+                </li>
+                <li class="price-row">
+                  <span>45 min</span>
+                  <strong>15 EUR</strong>
+                </li>
+                <li class="price-row">
+                  <span>60 min</span>
+                  <strong>18 EUR</strong>
+                </li>
+                <li class="price-row">
+                  <span>Ručna anticelulitna masaža</span>
+                  <strong>17 EUR</strong>
+                </li>
+                <li class="price-row">
+                  <span>Maderoterapija</span>
+                  <strong>17 EUR</strong>
+                </li>
+                <li class="price-row">
+                  <span>Limfna drenaža</span>
+                  <strong>15 EUR</strong>
+                </li>
+              </ul>
+            </article>
+
+            <article class="panel price-category">
+              <p class="price-category-label">Ruke</p>
+              <ul class="price-list" aria-label="Cjenik ruke">
+                <li class="price-row">
+                  <span>Manikura</span>
+                  <strong>10 EUR</strong>
+                </li>
+                <li class="price-row">
+                  <span>Trajni lak</span>
+                  <strong>15 EUR</strong>
+                </li>
+                <li class="price-row">
+                  <span>Gel</span>
+                  <strong>23 EUR</strong>
+                </li>
+                <li class="price-row">
+                  <span>Parafinska kupka</span>
+                  <strong>8 EUR</strong>
+                </li>
+              </ul>
+            </article>
+
+            <article class="panel price-category">
+              <p class="price-category-label">Noge</p>
+              <ul class="price-list" aria-label="Cjenik noge">
+                <li class="price-row">
+                  <span>Estetska pedikura</span>
+                  <strong>15 EUR</strong>
+                </li>
+                <li class="price-row">
+                  <span>Medicinska pedikura</span>
+                  <strong>20 EUR</strong>
+                </li>
+                <li class="price-row">
+                  <span>Pedikura + trajni lak</span>
+                  <strong>28 EUR</strong>
+                </li>
+                <li class="price-row">
+                  <span>Trajni lak</span>
+                  <strong>15 EUR</strong>
+                </li>
+                <li class="price-row">
+                  <span>Parafinska kupka</span>
+                  <strong>8 EUR</strong>
+                </li>
+              </ul>
+            </article>
+
+            <article class="panel price-category price-category-wide">
+              <p class="price-category-label">Depilacije</p>
+              <ul class="price-list" aria-label="Cjenik depilacija">
+                <li class="price-row">
+                  <span>Cijele noge</span>
+                  <strong>15 EUR</strong>
+                </li>
+                <li class="price-row">
+                  <span>Potkoljenice</span>
+                  <strong>10 EUR</strong>
+                </li>
+                <li class="price-row">
+                  <span>Cijele noge + bikini</span>
+                  <strong>18 EUR</strong>
+                </li>
+                <li class="price-row">
+                  <span>Cijele noge + brazilska</span>
+                  <strong>23 EUR</strong>
+                </li>
+                <li class="price-row">
+                  <span>Bikini</span>
+                  <strong>5 EUR</strong>
+                </li>
+                <li class="price-row">
+                  <span>Brazilska</span>
+                  <strong>12 EUR</strong>
+                </li>
+                <li class="price-row">
+                  <span>Cijele ruke</span>
+                  <strong>10 EUR</strong>
+                </li>
+                <li class="price-row">
+                  <span>Podlaktice</span>
+                  <strong>8 EUR</strong>
+                </li>
+                <li class="price-row">
+                  <span>Pazusi</span>
+                  <strong>5 EUR</strong>
+                </li>
+                <li class="price-row">
+                  <span>Stražnjica</span>
+                  <strong>5 EUR</strong>
+                </li>
+                <li class="price-row">
+                  <span>Trbuh / prsa / leđa</span>
+                  <strong>15 EUR</strong>
+                </li>
+                <li class="price-row">
+                  <span>Lice</span>
+                  <strong>5 EUR</strong>
+                </li>
+                <li class="price-row">
+                  <span>Brada</span>
+                  <strong>3 EUR</strong>
+                </li>
+                <li class="price-row">
+                  <span>Nausnice</span>
+                  <strong>2 EUR</strong>
+                </li>
+                <li class="price-row">
+                  <span>Oblikovanje obrva</span>
+                  <strong>6 EUR</strong>
+                </li>
+                <li class="price-row">
+                  <span>Korekcija obrva</span>
+                  <strong>4 EUR</strong>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="rezervacije" class="section booking-section" data-reveal>
+        <div class="booking-copy">
+          <p class="eyebrow">Rezervacije</p>
+          <h2>Rezervacija termina preko Instagrama.</h2>
+          <p>
+            Javi se na profil <strong>@beauty.by.bugi</strong> i pošalji uslugu koja te zanima,
+            okvirni termin i, po želji, inspiraciju.
+          </p>
+        </div>
+
+        <div class="booking-steps">
+          <article class="panel step-card">
+            <span>01</span>
+            <h3>Javi se u DM</h3>
+            <p>Napiši koju uslugu želiš i koji ti termin odgovara.</p>
+          </article>
+          <article class="panel step-card">
+            <span>02</span>
+            <h3>Pošalji sliku po želji</h3>
+            <p>Ako imaš ideju za nokte ili tretman, slobodno pošalji primjer.</p>
+          </article>
+          <article class="panel step-card">
+            <span>03</span>
+            <h3>Potvrda termina</h3>
+            <p>Nakon dogovora dobiješ potvrdu termina i sve potrebne informacije.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Beauty by Bugi</strong>
+        <p>Radovi, usluge i cjenik.</p>
+      </div>
+      <a
+        href="https://www.instagram.com/beauty.by.bugi/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        @beauty.by.bugi
+      </a>
+    </footer>
+
+    <dialog class="lightbox" id="lightbox">
+      <button class="lightbox-close" type="button" aria-label="Zatvori pregled">Zatvori</button>
+      <img id="lightbox-image" src="" alt="" />
+    </dialog>
+  </body>
+</html>
