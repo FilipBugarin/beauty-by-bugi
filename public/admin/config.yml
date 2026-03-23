@@ -1,0 +1,280 @@
+backend:
+  name: github
+  repo: FilipBugarin/beauty-by-bugi
+  branch: main
+  base_url: https://beauty-by-bugi-cms-auth.filipbugarin.workers.dev
+  auth_endpoint: auth
+
+site_url: https://beauty-by-bugi.pages.dev
+logo_url: /assets/gallery/nails-01.jpeg
+locale: hr
+publish_mode: simple
+media_folder: public/assets/gallery
+public_folder: /assets/gallery
+
+collections:
+  - name: settings
+    label: Stranica
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: site
+        label: Osnovni sadržaj
+        file: src/content/settings/site.yml
+        fields:
+          - label: Meta
+            name: meta
+            widget: object
+            fields:
+              - label: Naslov
+                name: title
+                widget: string
+              - label: Opis
+                name: description
+                widget: text
+          - label: Branding
+            name: branding
+            widget: object
+            fields:
+              - label: Naziv
+                name: name
+                widget: string
+              - label: Monogram
+                name: monogram
+                widget: string
+              - label: Podnaslov
+                name: tagline
+                widget: string
+          - label: Kontakt
+            name: contact
+            widget: object
+            fields:
+              - label: Instagram handle
+                name: instagramHandle
+                widget: string
+              - label: Instagram URL
+                name: instagramUrl
+                widget: string
+          - label: Navigacija
+            name: navigation
+            widget: list
+            summary: "{{fields.label}}"
+            fields:
+              - label: Naziv
+                name: label
+                widget: string
+              - label: Link
+                name: href
+                widget: string
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - label: Eyebrow
+                name: eyebrow
+                widget: string
+              - label: Naslov
+                name: title
+                widget: string
+              - label: Uvodni tekst
+                name: lead
+                widget: text
+              - label: Glavni gumb
+                name: primaryCtaLabel
+                widget: string
+              - label: Sekundarni gumb
+                name: secondaryCtaLabel
+                widget: string
+              - label: Link sekundarnog gumba
+                name: secondaryCtaHref
+                widget: string
+              - label: Istaknute stavke
+                name: highlights
+                widget: list
+                field:
+                  label: Stavka
+                  name: item
+                  widget: string
+              - label: Oznaka na kartici
+                name: noteEyebrow
+                widget: string
+              - label: Tekst na kartici
+                name: noteTitle
+                widget: string
+              - label: Glavna slika
+                name: primaryImage
+                widget: image
+              - label: Sporedna slika
+                name: secondaryImage
+                widget: image
+          - label: Uvodna sekcija
+            name: intro
+            widget: object
+            fields:
+              - label: Eyebrow
+                name: eyebrow
+                widget: string
+              - label: Naslov
+                name: title
+                widget: string
+              - label: Tekst
+                name: text
+                widget: text
+              - label: Kartice
+                name: features
+                widget: list
+                summary: "{{fields.title}}"
+                fields:
+                  - label: Naslov
+                    name: title
+                    widget: string
+                  - label: Tekst
+                    name: text
+                    widget: text
+          - label: Rezervacije
+            name: booking
+            widget: object
+            fields:
+              - label: Eyebrow
+                name: eyebrow
+                widget: string
+              - label: Naslov
+                name: title
+                widget: string
+              - label: Tekst
+                name: text
+                widget: text
+              - label: Koraci
+                name: steps
+                widget: list
+                summary: "{{fields.number}} - {{fields.title}}"
+                fields:
+                  - label: Broj
+                    name: number
+                    widget: string
+                  - label: Naslov
+                    name: title
+                    widget: string
+                  - label: Tekst
+                    name: text
+                    widget: text
+
+  - name: pricing
+    label: Cjenik
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: cjenik
+        label: Cjenik usluga
+        file: src/content/pricing/cjenik.yml
+        fields:
+          - label: Sekcija
+            name: section
+            widget: object
+            fields:
+              - label: Eyebrow
+                name: eyebrow
+                widget: string
+              - label: Naslov
+                name: title
+                widget: string
+              - label: Opis
+                name: description
+                widget: text
+          - label: Lijeva kartica
+            name: sidebar
+            widget: object
+            fields:
+              - label: Naslov
+                name: title
+                widget: string
+              - label: Tekst
+                name: text
+                widget: text
+              - label: Check lista
+                name: checklist
+                widget: list
+                field:
+                  label: Stavka
+                  name: item
+                  widget: string
+              - label: CTA tekst
+                name: ctaLabel
+                widget: string
+          - label: Kategorije
+            name: categories
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - label: Redoslijed
+                name: order
+                widget: number
+                value_type: int
+                min: 1
+              - label: Naziv
+                name: title
+                widget: string
+              - label: Široka kartica
+                name: wide
+                widget: boolean
+                required: false
+              - label: Stavke
+                name: items
+                widget: list
+                summary: "{{fields.label}} - {{fields.price}}"
+                fields:
+                  - label: Naziv usluge
+                    name: label
+                    widget: string
+                  - label: Dodatni opis
+                    name: detail
+                    widget: string
+                    required: false
+                  - label: Cijena
+                    name: price
+                    widget: string
+
+  - name: gallery
+    label: Galerija
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: radovi
+        label: Radovi
+        file: src/content/gallery/radovi.yml
+        fields:
+          - label: Sekcija
+            name: section
+            widget: object
+            fields:
+              - label: Eyebrow
+                name: eyebrow
+                widget: string
+              - label: Naslov
+                name: title
+                widget: string
+              - label: Opis
+                name: description
+                widget: text
+          - label: Slike
+            name: items
+            widget: list
+            summary: "{{fields.label}}"
+            fields:
+              - label: Redoslijed
+                name: order
+                widget: number
+                value_type: int
+                min: 1
+              - label: Oznaka
+                name: label
+                widget: string
+              - label: Alt tekst
+                name: alt
+                widget: string
+              - label: Slika
+                name: image
+                widget: image

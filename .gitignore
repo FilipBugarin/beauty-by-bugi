@@ -1,5 +1,9 @@
+.astro/
+node_modules/
 .wrangler/
 dist/
+.dev.vars
+.env
 
 price_listing.png
 WhatsApp Image *.jpeg

@@ -24,12 +24,11 @@ jobs:
         with:
           node-version: 24
 
-      - name: Prepare static files
-        run: |
-          rm -rf dist
-          mkdir -p dist
-          cp index.html styles.css script.js dist/
-          cp -r assets dist/
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Astro site
+        run: npm run build
 
       - name: Install Wrangler
         run: npm install --global wrangler@4.76.0

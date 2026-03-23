@@ -1,0 +1,57 @@
+meta:
+  title: Beauty by Bugi | Usluge i cjenik
+  description: Beauty by Bugi - radovi, usluge, cjenik i rezervacije preko Instagrama.
+branding:
+  name: Beauty by Bugi
+  monogram: BB
+  tagline: Radovi, usluge i rezervacije
+contact:
+  instagramHandle: "@beauty.by.bugi"
+  instagramUrl: https://www.instagram.com/beauty.by.bugi/
+navigation:
+  - label: Radovi
+    href: "#radovi"
+  - label: Cjenik
+    href: "#cjenik"
+  - label: Rezervacije
+    href: "#rezervacije"
+hero:
+  eyebrow: Beauty by Bugi
+  title: Nokti, pedikura, depilacije i masaže.
+  lead: Na stranici možeš pogledati radove, pregled usluga i cjenik. Za termin se javi direktno preko Instagrama.
+  primaryCtaLabel: Rezerviraj termin
+  secondaryCtaLabel: Pogledaj cjenik
+  secondaryCtaHref: "#cjenik"
+  highlights:
+    - Primjeri radova
+    - Cjenik usluga
+    - Rezervacije u DM
+  noteEyebrow: Beauty by Bugi
+  noteTitle: Javi se za termin
+  primaryImage: /assets/gallery/nails-01.jpeg
+  secondaryImage: /assets/gallery/nails-06.jpeg
+intro:
+  eyebrow: Na jednom mjestu
+  title: Sve osnovne informacije bez viška teksta.
+  text: Ovdje možeš pregledati radove, cijene i način rezervacije. Ako trebaš dodatne informacije, najlakše je javiti se porukom.
+  features:
+    - title: Radovi
+      text: Galerija prikazuje stvarne primjere dosadašnjih radova.
+    - title: Cjenik
+      text: Cijene su složene po kategorijama da se brzo mogu pregledati.
+    - title: Rezervacije
+      text: Za termin se javlja direktno na Instagram profil.
+booking:
+  eyebrow: Rezervacije
+  title: Rezervacija termina preko Instagrama.
+  text: Javi se na profil @beauty.by.bugi i pošalji uslugu koja te zanima, okvirni termin i, po želji, inspiraciju.
+  steps:
+    - number: "01"
+      title: Javi se u DM
+      text: Napiši koju uslugu želiš i koji ti termin odgovara.
+    - number: "02"
+      title: Pošalji sliku po želji
+      text: Ako imaš ideju za nokte ili tretman, slobodno pošalji primjer.
+    - number: "03"
+      title: Potvrda termina
+      text: Nakon dogovora dobiješ potvrdu termina i sve potrebne informacije.

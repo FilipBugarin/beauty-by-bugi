@@ -1,0 +1,10 @@
+{
+  "name": "beauty-by-bugi-cms-auth",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-03-23",
+  "workers_dev": true,
+  "preview_urls": false,
+  "vars": {
+    "ALLOWED_ORIGINS": "https://beauty-by-bugi.pages.dev"
+  }
+}

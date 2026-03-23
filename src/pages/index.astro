@@ -1,0 +1,166 @@
+---
+import { getEntry } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const [siteEntry, pricingEntry, galleryEntry] = await Promise.all([
+  getEntry("settings", "site"),
+  getEntry("pricing", "cjenik"),
+  getEntry("gallery", "radovi"),
+]);
+
+if (!siteEntry || !pricingEntry || !galleryEntry) {
+  throw new Error("Nedostaje sadržaj za početnu stranicu.");
+}
+
+const site = siteEntry.data;
+const pricing = pricingEntry.data;
+const gallery = [...galleryEntry.data.items].sort((left, right) => left.order - right.order);
+const categories = [...pricing.categories].sort((left, right) => left.order - right.order);
+const instagramUrl = site.contact.instagramUrl;
+---
+
+<BaseLayout site={site}>
+  <main id="top">
+    <section class="hero section" data-reveal>
+      <div class="hero-copy">
+        <p class="eyebrow">{site.hero.eyebrow}</p>
+        <h1>{site.hero.title}</h1>
+        <p class="lead">{site.hero.lead}</p>
+
+        <div class="hero-actions">
+          <a class="button" href={instagramUrl} target="_blank" rel="noreferrer">
+            {site.hero.primaryCtaLabel}
+          </a>
+          <a class="button button-secondary" href={site.hero.secondaryCtaHref}>
+            {site.hero.secondaryCtaLabel}
+          </a>
+        </div>
+
+        <ul class="hero-points" aria-label="Izdvojene stavke">
+          {site.hero.highlights.map((highlight) => (
+            <li>{highlight}</li>
+          ))}
+        </ul>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="visual-stack">
+          <figure class="visual-card visual-card-main">
+            <img src={site.hero.primaryImage} alt="" />
+          </figure>
+          <figure class="visual-card visual-card-accent">
+            <img src={site.hero.secondaryImage} alt="" />
+          </figure>
+          <div class="floating-note">
+            <span>{site.hero.noteEyebrow}</span>
+            <strong>{site.hero.noteTitle}</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section intro-grid" data-reveal>
+      <article class="panel statement">
+        <p class="eyebrow">{site.intro.eyebrow}</p>
+        <h2>{site.intro.title}</h2>
+        <p>{site.intro.text}</p>
+      </article>
+
+      <div class="panel feature-list">
+        {site.intro.features.map((feature) => (
+          <article>
+            <h3>{feature.title}</h3>
+            <p>{feature.text}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section id="radovi" class="section" data-reveal>
+      <div class="section-heading">
+        <p class="eyebrow">{galleryEntry.data.section.eyebrow}</p>
+        <h2>{galleryEntry.data.section.title}</h2>
+        <p>{galleryEntry.data.section.description}</p>
+      </div>
+
+      <div id="gallery" class="gallery" aria-live="polite">
+        {gallery.map((item) => (
+          <button
+            type="button"
+            class="gallery-card"
+            data-lightbox-src={item.image}
+            data-lightbox-alt={item.alt}
+            aria-label={`Otvori veći prikaz za ${item.alt}`}
+          >
+            <img src={item.image} alt={item.alt} loading="lazy" />
+            <span>{item.label}</span>
+          </button>
+        ))}
+      </div>
+    </section>
+
+    <section id="cjenik" class="section price-section" data-reveal>
+      <div class="section-heading">
+        <p class="eyebrow">{pricing.section.eyebrow}</p>
+        <h2>{pricing.section.title}</h2>
+        <p>{pricing.section.description}</p>
+      </div>
+
+      <div class="price-layout">
+        <article class="panel price-copy">
+          <h3>{pricing.sidebar.title}</h3>
+          <p>{pricing.sidebar.text}</p>
+          <ul class="check-list">
+            {pricing.sidebar.checklist.map((item) => (
+              <li>{item}</li>
+            ))}
+          </ul>
+          <a class="button" href={instagramUrl} target="_blank" rel="noreferrer">
+            {pricing.sidebar.ctaLabel}
+          </a>
+        </article>
+
+        <div class="price-cards">
+          {categories.map((category) => (
+            <article class:list={["panel", "price-category", category.wide && "price-category-wide"]}>
+              <p class="price-category-label">{category.title}</p>
+              <ul class="price-list" aria-label={`Cjenik ${category.title.toLowerCase()}`}>
+                {category.items.map((item) => (
+                  <li class:list={["price-row", item.detail && "price-row-stack"]}>
+                    {item.detail ? (
+                      <div>
+                        <strong>{item.label}</strong>
+                        <span>{item.detail}</span>
+                      </div>
+                    ) : (
+                      <span>{item.label}</span>
+                    )}
+                    <strong>{item.price}</strong>
+                  </li>
+                ))}
+              </ul>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section id="rezervacije" class="section booking-section" data-reveal>
+      <div class="booking-copy">
+        <p class="eyebrow">{site.booking.eyebrow}</p>
+        <h2>{site.booking.title}</h2>
+        <p>{site.booking.text}</p>
+      </div>
+
+      <div class="booking-steps">
+        {site.booking.steps.map((step) => (
+          <article class="panel step-card">
+            <span>{step.number}</span>
+            <h3>{step.title}</h3>
+            <p>{step.text}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  </main>
+</BaseLayout>

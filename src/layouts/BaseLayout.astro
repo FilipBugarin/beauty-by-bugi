@@ -1,0 +1,61 @@
+---
+import "../styles/global.css";
+
+const { site } = Astro.props;
+const instagramUrl = site.contact.instagramUrl;
+---
+
+<!doctype html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{site.meta.title}</title>
+    <meta name="description" content={site.meta.description} />
+    <link rel="preconnect" href="https://www.instagram.com" />
+  </head>
+  <body>
+    <div class="background-orb orb-left" aria-hidden="true"></div>
+    <div class="background-orb orb-right" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label={`${site.branding.name} početna`}>
+        <span class="brand-mark">{site.branding.monogram}</span>
+        <span class="brand-copy">
+          <strong>{site.branding.name}</strong>
+          <span>{site.branding.tagline}</span>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Glavna navigacija">
+        {site.navigation.map((item) => (
+          <a href={item.href}>{item.label}</a>
+        ))}
+      </nav>
+
+      <a class="button button-small" href={instagramUrl} target="_blank" rel="noreferrer">
+        Instagram DM
+      </a>
+    </header>
+
+    <slot />
+
+    <footer class="site-footer">
+      <div>
+        <strong>{site.branding.name}</strong>
+      </div>
+      <a href={instagramUrl} target="_blank" rel="noreferrer">
+        {site.contact.instagramHandle}
+      </a>
+    </footer>
+
+    <dialog class="lightbox" id="lightbox">
+      <button class="lightbox-close" type="button" aria-label="Zatvori pregled">
+        Zatvori
+      </button>
+      <img id="lightbox-image" src="" alt="" />
+    </dialog>
+
+    <script src="/scripts/site.js" defer></script>
+  </body>
+</html>

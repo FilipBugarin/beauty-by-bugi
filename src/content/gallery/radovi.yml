@@ -1,0 +1,81 @@
+section:
+  eyebrow: Radovi
+  title: Primjeri dosadašnjih radova.
+  description: Klik na sliku otvara veći prikaz.
+items:
+  - order: 1
+    label: Rad 01
+    alt: Beauty by Bugi rad 1
+    image: /assets/gallery/nails-01.jpeg
+  - order: 2
+    label: Rad 02
+    alt: Beauty by Bugi rad 2
+    image: /assets/gallery/nails-02.jpeg
+  - order: 3
+    label: Rad 03
+    alt: Beauty by Bugi rad 3
+    image: /assets/gallery/nails-03.jpeg
+  - order: 4
+    label: Rad 04
+    alt: Beauty by Bugi rad 4
+    image: /assets/gallery/nails-04.jpeg
+  - order: 5
+    label: Rad 05
+    alt: Beauty by Bugi rad 5
+    image: /assets/gallery/nails-05.jpeg
+  - order: 6
+    label: Rad 06
+    alt: Beauty by Bugi rad 6
+    image: /assets/gallery/nails-06.jpeg
+  - order: 7
+    label: Rad 07
+    alt: Beauty by Bugi rad 7
+    image: /assets/gallery/nails-07.jpeg
+  - order: 8
+    label: Rad 08
+    alt: Beauty by Bugi rad 8
+    image: /assets/gallery/nails-08.jpeg
+  - order: 9
+    label: Rad 09
+    alt: Beauty by Bugi rad 9
+    image: /assets/gallery/nails-09.jpeg
+  - order: 10
+    label: Rad 10
+    alt: Beauty by Bugi rad 10
+    image: /assets/gallery/nails-10.jpeg
+  - order: 11
+    label: Rad 11
+    alt: Beauty by Bugi rad 11
+    image: /assets/gallery/nails-11.jpeg
+  - order: 12
+    label: Rad 12
+    alt: Beauty by Bugi rad 12
+    image: /assets/gallery/nails-12.jpeg
+  - order: 13
+    label: Rad 13
+    alt: Beauty by Bugi rad 13
+    image: /assets/gallery/nails-13.jpeg
+  - order: 14
+    label: Rad 14
+    alt: Beauty by Bugi rad 14
+    image: /assets/gallery/nails-14.jpeg
+  - order: 15
+    label: Rad 15
+    alt: Beauty by Bugi rad 15
+    image: /assets/gallery/nails-15.jpeg
+  - order: 16
+    label: Rad 16
+    alt: Beauty by Bugi rad 16
+    image: /assets/gallery/nails-16.jpeg
+  - order: 17
+    label: Rad 17
+    alt: Beauty by Bugi rad 17
+    image: /assets/gallery/nails-17.jpeg
+  - order: 18
+    label: Rad 18
+    alt: Beauty by Bugi rad 18
+    image: /assets/gallery/nails-18.jpeg
+  - order: 19
+    label: Rad 19
+    alt: Beauty by Bugi rad 19
+    image: /assets/gallery/nails-19.jpeg

@@ -1,0 +1,94 @@
+section:
+  eyebrow: Cjenik usluga
+  title: Pregled usluga i cijena.
+  description: Ako nisi sigurna koja usluga ti treba, javi se porukom za dodatne informacije.
+sidebar:
+  title: Napomena
+  text: Za rezervaciju termina ili dodatna pitanja javi se na Instagram.
+  checklist:
+    - Pošalji koju uslugu želiš
+    - Navedi termin koji ti odgovara
+    - Ako imaš inspiraciju, pošalji i sliku
+  ctaLabel: Pošalji upit
+categories:
+  - order: 1
+    title: Masaže
+    wide: false
+    items:
+      - label: Klasična masaža
+        detail: 15 min
+        price: 10 EUR
+      - label: 30 min
+        price: 13 EUR
+      - label: 45 min
+        price: 15 EUR
+      - label: 60 min
+        price: 18 EUR
+      - label: Ručna anticelulitna masaža
+        price: 17 EUR
+      - label: Maderoterapija
+        price: 17 EUR
+      - label: Limfna drenaža
+        price: 15 EUR
+  - order: 2
+    title: Ruke
+    wide: false
+    items:
+      - label: Manikura
+        price: 10 EUR
+      - label: Trajni lak
+        price: 15 EUR
+      - label: Gel
+        price: 23 EUR
+      - label: Parafinska kupka
+        price: 8 EUR
+  - order: 3
+    title: Noge
+    wide: false
+    items:
+      - label: Estetska pedikura
+        price: 15 EUR
+      - label: Medicinska pedikura
+        price: 20 EUR
+      - label: Pedikura + trajni lak
+        price: 28 EUR
+      - label: Trajni lak
+        price: 15 EUR
+      - label: Parafinska kupka
+        price: 8 EUR
+  - order: 4
+    title: Depilacije
+    wide: true
+    items:
+      - label: Cijele noge
+        price: 15 EUR
+      - label: Potkoljenice
+        price: 10 EUR
+      - label: Cijele noge + bikini
+        price: 18 EUR
+      - label: Cijele noge + brazilska
+        price: 23 EUR
+      - label: Bikini
+        price: 5 EUR
+      - label: Brazilska
+        price: 12 EUR
+      - label: Cijele ruke
+        price: 10 EUR
+      - label: Podlaktice
+        price: 8 EUR
+      - label: Pazusi
+        price: 5 EUR
+      - label: Stražnjica
+        price: 5 EUR
+      - label: Trbuh / prsa / leđa
+        price: 15 EUR
+      - label: Lice
+        price: 5 EUR
+      - label: Brada
+        price: 3 EUR
+      - label: Nausnice
+        price: 2 EUR
+      - label: Oblikovanje obrva
+        price: 6 EUR
+      - label: Korekcija obrva
+        price: 4 EUR

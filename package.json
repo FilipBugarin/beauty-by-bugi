@@ -1,0 +1,25 @@
+{
+  "name": "beauty-by-bugi",
+  "version": "1.0.0",
+  "description": "Beauty by Bugi website built with Astro and Decap CMS.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "dependencies": {
+    "@astrojs/cloudflare": "^13.1.3",
+    "astro": "^6.0.8",
+    "decap-cms-app": "^3.10.1",
+    "typescript": "^5.9.3"
+  }
+}
