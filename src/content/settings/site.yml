@@ -4,7 +4,7 @@ meta:
 branding:
   name: Beauty by Bugi
   monogram: BB
-  tagline: Radovi, usluge i rezervacije
+  tagline: Radovi, usluge i rezervacije test
 contact:
   instagramHandle: "@beauty.by.bugi"
   instagramUrl: https://www.instagram.com/beauty.by.bugi/
@@ -16,24 +16,26 @@ navigation:
   - label: Rezervacije
     href: "#rezervacije"
 hero:
-  eyebrow: Beauty by Bugi
-  title: Nokti, pedikura, depilacije i masaže.
-  lead: Na stranici možeš pogledati radove, pregled usluga i cjenik. Za termin se javi direktno preko Instagrama.
+  noteTitle: Javi se za termin
   primaryCtaLabel: Rezerviraj termin
-  secondaryCtaLabel: Pogledaj cjenik
+  secondaryImage: /assets/gallery/nails-06.jpeg
   secondaryCtaHref: "#cjenik"
+  eyebrow: Beauty by Bugi
+  noteEyebrow: Beauty by Bugi
+  secondaryCtaLabel: Pogledaj cjenik
+  title: Nokti, pedikura, depilacije i masaže.
+  primaryImage: /assets/gallery/nails-01.jpeg
+  lead: Na stranici možeš pogledati radove, pregled usluga i cjenik. Za termin se
+    javi direktno preko Instagrama.
   highlights:
     - Primjeri radova
     - Cjenik usluga
     - Rezervacije u DM
-  noteEyebrow: Beauty by Bugi
-  noteTitle: Javi se za termin
-  primaryImage: /assets/gallery/nails-01.jpeg
-  secondaryImage: /assets/gallery/nails-06.jpeg
 intro:
   eyebrow: Na jednom mjestu
   title: Sve osnovne informacije bez viška teksta.
-  text: Ovdje možeš pregledati radove, cijene i način rezervacije. Ako trebaš dodatne informacije, najlakše je javiti se porukom.
+  text: Ovdje možeš pregledati radove, cijene i način rezervacije. Ako trebaš
+    dodatne informacije, najlakše je javiti se porukom.
   features:
     - title: Radovi
       text: Galerija prikazuje stvarne primjere dosadašnjih radova.
@@ -44,7 +46,8 @@ intro:
 booking:
   eyebrow: Rezervacije
   title: Rezervacija termina preko Instagrama.
-  text: Javi se na profil @beauty.by.bugi i pošalji uslugu koja te zanima, okvirni termin i, po želji, inspiraciju.
+  text: Javi se na profil @beauty.by.bugi i pošalji uslugu koja te zanima, okvirni
+    termin i, po želji, inspiraciju.
   steps:
     - number: "01"
       title: Javi se u DM
