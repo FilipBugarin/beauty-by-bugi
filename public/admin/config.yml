@@ -2,6 +2,7 @@ backend:
   name: github
   repo: FilipBugarin/beauty-by-bugi
   branch: main
+  auth_scope: public_repo
   base_url: https://beauty-by-bugi-cms-auth.filipbugarin.workers.dev
   auth_endpoint: auth
 
